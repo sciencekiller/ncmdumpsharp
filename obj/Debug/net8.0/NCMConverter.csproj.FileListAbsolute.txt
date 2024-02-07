@@ -1,0 +1,12 @@
+D:\Crash_Launcher\NCMConverter\bin\Debug\net8.0\NCMConverter.deps.json
+D:\Crash_Launcher\NCMConverter\bin\Debug\net8.0\NCMConverter.dll
+D:\Crash_Launcher\NCMConverter\bin\Debug\net8.0\NCMConverter.pdb
+D:\Crash_Launcher\NCMConverter\obj\Debug\net8.0\NCMConverter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Crash_Launcher\NCMConverter\obj\Debug\net8.0\NCMConverter.AssemblyInfoInputs.cache
+D:\Crash_Launcher\NCMConverter\obj\Debug\net8.0\NCMConverter.AssemblyInfo.cs
+D:\Crash_Launcher\NCMConverter\obj\Debug\net8.0\NCMConverter.csproj.CoreCompileInputs.cache
+D:\Crash_Launcher\NCMConverter\obj\Debug\net8.0\NCMConverter.sourcelink.json
+D:\Crash_Launcher\NCMConverter\obj\Debug\net8.0\NCMConverter.dll
+D:\Crash_Launcher\NCMConverter\obj\Debug\net8.0\refint\NCMConverter.dll
+D:\Crash_Launcher\NCMConverter\obj\Debug\net8.0\NCMConverter.pdb
+D:\Crash_Launcher\NCMConverter\obj\Debug\net8.0\ref\NCMConverter.dll

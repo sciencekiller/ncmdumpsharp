@@ -1,20 +1,17 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+﻿# NCMConverter
+原项目地址:[ncmdump](https://github.com/taurusxin/ncmdump)
+## 食用方式
+下载dll[libncmdump](https://github.com/taurusxin/ncmdump/files/13992246/libncmdump.zip)，更名为taurusxin.LibNcmDump.dll，放在输出目录（或者始终复制）
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+### 方法
+请先using NCMConverter
+- ### `int Converter.Convert(string sourceFileName)`
+`sourceFileName`:源文件绝对路径
+返回值:基本不用管，return 0成功，return 1失败
+结果：在源文件目录下生成转化后的文件
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
-
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+- ### `int Converter.Convert(string sourceFileName,string destFolderName)`
+`sourceFileName`:源文件绝对路径
+`destFolderName`:输出目录绝对路径
+返回值:基本不用管，return 0成功，return 1失败
+结果：在`destFolderName`下生成转化后的文件
