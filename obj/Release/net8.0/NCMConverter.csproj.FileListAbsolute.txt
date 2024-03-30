@@ -10,4 +10,3 @@ D:\Crash_Launcher\NCMConverter\obj\Release\net8.0\NCMConverter.dll
 D:\Crash_Launcher\NCMConverter\obj\Release\net8.0\refint\NCMConverter.dll
 D:\Crash_Launcher\NCMConverter\obj\Release\net8.0\NCMConverter.pdb
 D:\Crash_Launcher\NCMConverter\obj\Release\net8.0\ref\NCMConverter.dll
-D:\Crash_Launcher\NCMConverter\obj\Release\net8.0\NCMConverter.csproj.AssemblyReference.cache

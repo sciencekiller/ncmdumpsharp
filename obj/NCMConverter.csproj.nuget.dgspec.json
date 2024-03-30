@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\Crash_Launcher\\NCMConverter\\NCMConverter.csproj": {
-      "version": "2.0.3",
+      "version": "2.1.1",
       "restore": {
         "projectUniqueName": "D:\\Crash_Launcher\\NCMConverter\\NCMConverter.csproj",
         "projectName": "ncmconverter",
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "D:\\Crash_Launcher\\NCMConverter\\bin\\Release": {},
           "https://nuget.cdn.azure.cn/v3/index.json": {},
           "https://repo.huaweicloud.com/repository/nuget/v3/index.json": {}
         },
@@ -40,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -61,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

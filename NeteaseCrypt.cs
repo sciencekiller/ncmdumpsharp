@@ -10,17 +10,17 @@ namespace NCMConverter
 {
     public class NeteaseCrypt
     {
-        const string DLL_PATH = "taurusxin.LibNcmDump.dll";
-        [DllImport(DLL_PATH)]
-        private static extern IntPtr CreateNeteaseCrypt(string path);
+        const string DLL_PATH = "taurusxin.libncmdump.dll";
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl)]
+        private static extern IntPtr CreateNeteaseCrypt(IntPtr path);
 
-        [DllImport(DLL_PATH)]
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl)]
         private static extern int Dump(IntPtr NeteaseCrypt);
 
-        [DllImport(DLL_PATH)]
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl)]
         private static extern void FixMetadata(IntPtr NeteaseCrypt);
 
-        [DllImport(DLL_PATH)]
+        [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl)]
         private static extern void DestroyNeteaseCrypt(IntPtr NeteaseCrypt);
 
         private IntPtr NeteaseCryptClass = IntPtr.Zero;
@@ -31,7 +31,7 @@ namespace NCMConverter
         /// <param name="FileName">网易云音乐 ncm 加密文件路径</param>
         public NeteaseCrypt(string FileName)
         {
-            NeteaseCryptClass = CreateNeteaseCrypt(FileName);
+            NeteaseCryptClass = CreateNeteaseCrypt(Marshal.StringToHGlobalAnsi(FileName));
         }
 
         /// <summary>
@@ -49,6 +49,14 @@ namespace NCMConverter
         public void FixMetadata()
         {
             FixMetadata(NeteaseCryptClass);
+        }
+
+        /// <summary>
+        /// 销毁 NeteaseCrypt 类的实例。
+        /// </summary>
+        public void Destroy()
+        {
+            DestroyNeteaseCrypt(NeteaseCryptClass);
         }
     }
 }

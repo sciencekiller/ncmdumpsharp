@@ -15,8 +15,8 @@
 		<PackageId>ncmconverter</PackageId>
 		<RepositoryUrl>https://github.com/sciencekiller/NCMConverter</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<Copyright>Copyright Sciencekill 2023</Copyright>
-		<Version>2.0.3</Version>
+		<Copyright>Copyright Sciencekill 2024</Copyright>
+		<Version>2.1.1</Version>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
 		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);LibContentTarget</TargetsForTfmSpecificBuildOutput>
