@@ -10,35 +10,6 @@ namespace NCMConverter
 {
     public static class Converter
     {
-        public static async Task RemoveLocalDLLFile()
-        {
-            if (File.Exists(Path.Combine(Environment.CurrentDirectory, "taurusxin.libncmdump.dll")))
-            {
-                File.Delete(Path.Combine(Environment.CurrentDirectory, "taurusxin.libncmdump.dll"));
-            }
-        }
-        public static async Task GetDllFile(bool overwrite)
-        {
-            if(overwrite) {
-                if (File.Exists(Path.Combine(Environment.CurrentDirectory, "taurusxin.libncmdump.dll")))
-                {
-                    File.Delete(Path.Combine(Environment.CurrentDirectory, "taurusxin.libncmdump.dll"));
-                }
-            }
-            var url = "https://ghproxy.sciencekill.top/github.com/sciencekiller/ncmdumpsharp/releases/download/dll/taurusxin.libncmdump.dll";
-            var path = Path.Combine(Environment.CurrentDirectory, "taurusxin.libncmdump.dll");
-            var http = new HttpClient();
-            var request=new HttpRequestMessage(HttpMethod.Get, url);
-            var response = await http.SendAsync(request);
-            using (var fs = File.Open(path, FileMode.Create)) 
-            {
-                using (var ms = response.Content.ReadAsStream())
-                {
-                    await ms.CopyToAsync(fs);
-                }
-            }
-            return;
-        }
         public static int Convert(string filepath,string outputpath="default",bool overwrite=false)
         {
             string destFileName;
