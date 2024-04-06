@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace NCMConverter
 {
-    public class NeteaseCrypt
+    class NeteaseCrypt
     {
         const string DLL_PATH = "taurusxin.libncmdump.dll";
+
         [DllImport(DLL_PATH, CallingConvention = CallingConvention.Cdecl)]
         private static extern IntPtr CreateNeteaseCrypt(IntPtr path);
 
@@ -31,7 +32,13 @@ namespace NCMConverter
         /// <param name="FileName">网易云音乐 ncm 加密文件路径</param>
         public NeteaseCrypt(string FileName)
         {
-            NeteaseCryptClass = CreateNeteaseCrypt(Marshal.StringToHGlobalAnsi(FileName));
+            byte[] bytes = Encoding.UTF8.GetBytes(FileName);
+
+            IntPtr inputPtr = Marshal.AllocHGlobal(bytes.Length + 1);
+            Marshal.Copy(bytes, 0, inputPtr, bytes.Length);
+            Marshal.WriteByte(inputPtr, bytes.Length, 0);
+
+            NeteaseCryptClass = CreateNeteaseCrypt(inputPtr);
         }
 
         /// <summary>

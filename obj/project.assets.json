@@ -12,7 +12,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "2.1.1",
+    "version": "2.2.0",
     "restore": {
       "projectUniqueName": "D:\\Crash_Launcher\\NCMConverter\\NCMConverter.csproj",
       "projectName": "ncmconverter",
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "D:\\Crash_Launcher\\NCMConverter\\bin\\Release": {},
         "https://nuget.cdn.azure.cn/v3/index.json": {},
         "https://repo.huaweicloud.com/repository/nuget/v3/index.json": {}
       },

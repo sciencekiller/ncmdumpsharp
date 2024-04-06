@@ -15,11 +15,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright Sciencekill 2024")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("将NCM文件转为可以直接播放的文件，基于ncmdump(MIT开源)，没有进行修改，只是改为类库方便使用，因此，不做盈利目的")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("2.1.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.1+cbfc523dd91bde6ad40622f579eecad37e0a38e5")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("2.2.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.2.0+39ea7e855b6641aa0f6b6a89bc4b965825b30c55")]
 [assembly: System.Reflection.AssemblyProductAttribute("NCMConverter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NCMConverter")]
-[assembly: System.Reflection.AssemblyVersionAttribute("2.1.1.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("2.2.0.0")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/sciencekiller/NCMConverter")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
